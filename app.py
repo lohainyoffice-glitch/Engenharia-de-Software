@@ -10,7 +10,7 @@ if hist_button:
 
     fig = px.histogram(car_data, x = 'odometer')
 
-    st.plot_chart(fig, use_container_width = True)
+    st.plotly_chart(fig, use_container_width=True)
 
 
 

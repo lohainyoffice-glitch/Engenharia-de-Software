@@ -14,3 +14,11 @@ if hist_button:
 
 
 
+scatter_button = st.button('Criar gráfico de dispersão')
+
+if scatter_button:
+    st.write('Criando um gráfico de dispersão para um conjunto de anúncios de vendas de carros de acordo com ano do modelo e valor.')
+    
+    fig = px.scatter(car_data, x="model_year", y="price")
+    
+    st.plotly_chart(fig, use_container_width=True)
